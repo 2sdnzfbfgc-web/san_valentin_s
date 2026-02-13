@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>¿Quieres ser mi San Valentín?</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="center">
+      <div class="card" id="card">
+        <h1>¿Quieres ser mi San Valentín?</h1>
+        <p class="subtitle">Pulsa una opción y veremos qué pasa ❤️</p>
+        <div id="buttons" class="buttons">
+          <button id="yes" class="btn yes">Sí</button>
+          <button id="no" class="btn no">No</button>
+        </div>
+
+        <div id="response" class="response hidden">
+          <div id="emoji" class="emoji"></div>
+          <p id="message" class="message"></p>
+          <div id="lives" class="lives hidden">Vidas: <span id="count">3</span></div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- Modal carta + corazones -->
+<div id="letterModal" class="modal hidden">
+  <div class="modal-backdrop"></div>
+  <div class="modal-content">
+    <button id="closeLetter" class="close">×</button>
+    <div class="dog-illustration" aria-hidden="true">
+      <!-- ilustración de perrito simple (original) -->
+      <svg width="140" height="100" viewBox="0 0 140 100" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <ellipse cx="70" cy="62" rx="36" ry="22" fill="#fff5f9" stroke="none"/>
+          <path d="M30 55 q10 -24 40 -26 q30 2 40 26" fill="#fff5f9" stroke="#333"/>
+          <circle cx="55" cy="48" r="3" fill="#333"/>
+          <circle cx="85" cy="48" r="3" fill="#333"/>
+          <path d="M68 60 q-4 6 -10 6" stroke="#333" fill="none"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="letter">
+      <p>Gracias por estar en mi vida mi hermosa novia, te amo muchoooooo. Eres la mejor novia y una mujer perfecta. Perdón que no vamos a estar juntos este San Valentín y recuerda que eres una niña fuerte. Te amo mucho más que las estrellas.</p>
+    </div>
+    <div id="hearts" class="hearts"></div>
+  </div>
+</div>
+
+<!-- Contenedor de confetti -->
+<div id="confetti"></div>
