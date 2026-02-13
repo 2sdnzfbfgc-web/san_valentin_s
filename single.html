@@ -81,6 +81,12 @@ h1{margin:0 0 12px;font-size:1.8rem}
     </style>
   </head>
   <body>
+    <!-- Audio con URL remota -->
+    <audio id="bgMusic" loop playsinline style="display:none">
+      <source src="https://raw.githubusercontent.com/2sdnzfbfgc-web/san_valentin_s/main/ytmp3free.cc_zoe-azul-lyric-video-youtubemp3free.org%20(1).mp3" type="audio/mpeg">
+    </audio>
+    <button id="volumeToggle" style="position:fixed;bottom:20px;right:20px;width:48px;height:48px;border-radius:50%;border:none;background:#ff4d87;color:#fff;font-size:20px;cursor:pointer;z-index:100;box-shadow:0 4px 12px rgba(255,77,135,0.3);transition:all 200ms">🔊</button>
+    
     <main class="center hidden" id="mainCard">
       <div class="card" id="card">
         <h1>¿Quieres ser mi San Valentín?</h1>
